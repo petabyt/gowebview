@@ -1,5 +1,5 @@
 package webview
 
-func Test() String {
+func Test() string {
 	return "Hello"
 }
