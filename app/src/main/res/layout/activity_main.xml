@@ -1,0 +1,22 @@
+<!-- Copyright 2015 The Go Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style
+     license that can be found in the LICENSE file. -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    tools:context=".MainActivity" >
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</RelativeLayout>
