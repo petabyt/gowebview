@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-echo Building Go...
-gomobile bind -o app/webview.aar github.com/pufflegamerz/webview
-echo Done, now building APK...
-
 ##############################################################################
 ##
 ##  Gradle start up script for UN*X
