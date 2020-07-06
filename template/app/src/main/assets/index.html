@@ -1,1 +1,20 @@
-<button onclick="document.body.innerHTML += backend.test()">Test</button>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>(This won't show up)</title>
+		<style media="screen">
+		button {
+			padding: 10px 15px;
+		}
+		</style>
+		<script type="text/javascript">
+		function test() {
+			document.body.innerHTML += "<br>" + b.test();
+		}
+		</script>
+	</head>
+	<body>
+		<button onclick="test()">Call Go Code</button>
+	</body>
+</html>
