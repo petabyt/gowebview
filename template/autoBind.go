@@ -19,16 +19,16 @@ func main() {
 	}
 
 	@JavascriptInterface
-    public String test() {
-        return Webview.test();
-    }`;
+	public String test() {
+		return Webview.test();
+	}`;
 
 	path, _ := os.Getwd()
 	fileName := path + "/app/src/main/java/MainActivity.java"
 	code, err := ioutil.ReadFile(fileName)
-    if err != nil {
-        log.Fatalln(err)
-    }
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	// Split between the comments
 	str := string(code)
@@ -45,9 +45,9 @@ func main() {
 
 	// Write back to the file
 	err = ioutil.WriteFile(fileName, []byte(newFile), 0644)
-    if err != nil {
-        log.Fatalln(err)
-    }
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	fmt.Println("Everything worked, cool")
 }
