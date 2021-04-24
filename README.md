@@ -1,15 +1,20 @@
 # Go Android WebView
-Write Android apps in HTML/CSS/JS with a Golang backend.
+Write Android apps in HTML/CSS/JS with a Golang backend.  
+This uses the native Android webview.
 
 ## To start:
-1. Cd into `template` or make a copy of it.
-2. `./init.sh` (you may have to `sudo chmod +x init.sh`)
-3. run `build.sh` (Edit it to change it to your package)
+`make`
 
 ## Requirements
 1. Gomobile
 2. Android SDK
 
-## Releasing
-I'm not so sure about building for release yet, but making  
-an release key would be needed.
+## Tips
+To change the icon:  
+`app/src/main/res/drawable`  
+To add HTML files:  
+`app/src/main/assets`  
+Change app name and ID:  
+`app/src/build.gradle` and `app/src/main/AndroidManifest.xml`  
+Add Java function routers:  
+`app/src/main/java/MainActivity.java`  
