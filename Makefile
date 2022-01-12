@@ -1,9 +1,9 @@
 all: go java
 
 help:
-	@echo "make			Build Go + Java"
-	@echo "make go		Build Go only"
-	@echo "make java	Build Java only"
+	@echo "make         Build Go + Java"
+	@echo "make go      Build Go only"
+	@echo "make java    Build Java only"
 
 go:
 	@gomobile bind -v -o app/webview.aar -target=android ./backend/
@@ -23,3 +23,5 @@ init:
 
 clean:
 	@rm -rf app/*-sources.jar app/*.aar
+
+.PHONY: clean init java go help all
